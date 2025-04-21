@@ -311,19 +311,30 @@ class AuditDashboardState extends State<AuditDashboard> {
                     ),
                   ),
                 ),
+                SizedBox(height: 10),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    TextButton(
+                    ElevatedButton.icon(
+                      label: Text("View Full Report"),
                       onPressed:
                           () => Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (_) => AuditReportWebView(),
-                            ),
-                          ),
-                      child: Text('View Full Report'),
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => AuditReportWebView(),
+                        ),
+                      ),
                     ),
+                    // TextButton(
+                    //   onPressed:
+                    //       () => Navigator.push(
+                    //         context,
+                    //         MaterialPageRoute(
+                    //           builder: (_) => AuditReportWebView(),
+                    //         ),
+                    //       ),
+                    //   child: Text('View Full Report'),
+                    // ),
                     ElevatedButton.icon(
                       icon: Icon(Icons.picture_as_pdf),
                       label: Text("Export Summary"),
