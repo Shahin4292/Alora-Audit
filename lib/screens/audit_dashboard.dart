@@ -229,13 +229,13 @@ class AuditDashboardState extends State<AuditDashboard> {
                     ),
                   ),
                 ),
-                TextButton(
-                  onPressed: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (_) => AuditReportWebView()),
-                  ),
-                  child: Text('View Full Report'),
-                ),
+                // TextButton(
+                //   onPressed: () => Navigator.push(
+                //     context,
+                //     MaterialPageRoute(builder: (_) => AuditReportWebView()),
+                //   ),
+                //   child: Text('View Full Report'),
+                // ),
                 // const SizedBox(height: 40),
                 // const Text("Pie Chart", style: TextStyle(fontSize: 20)),
                 // const SizedBox(height: 10),
