@@ -10,6 +10,7 @@ class AloraApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Alora Site Auditor',
       theme: ThemeData(primarySwatch: Colors.indigo),
       home: AuditDashboard(),

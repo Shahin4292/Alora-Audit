@@ -28,12 +28,11 @@ class AuditDashboardState extends State<AuditDashboard> {
       "task_id": "12345",
       "status": "completed",
       "results": {
-        "score": 92,
-        "accuracy": 88,
-        "efficiency": 75,
-        "compliance": 95,
+        "score": 70,
+        "accuracy": 80,
+        "efficiency": 65,
+        "compliance": 50,
         "Pages" : 10,
-        "passed": true
       }
     };
 
