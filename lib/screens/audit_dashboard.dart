@@ -19,7 +19,6 @@ class AuditDashboard extends StatefulWidget {
 
 class AuditDashboardState extends State<AuditDashboard> {
   final _controller = TextEditingController();
-  bool isButtonEnabled = false;
   final _service = AuditService();
   final _screenshotController = ScreenshotController();
   AuditResult? auditData;
@@ -39,16 +38,6 @@ class AuditDashboardState extends State<AuditDashboard> {
 
     setState(() {
       auditData = AuditResult.fromJson(jsonData);
-    });
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    _controller.addListener(() {
-      setState(() {
-        isButtonEnabled = _controller.text.trim().isNotEmpty;
-      });
     });
   }
 
@@ -208,7 +197,7 @@ class AuditDashboardState extends State<AuditDashboard> {
               ),
               SizedBox(height: 12),
               ElevatedButton(
-                onPressed: isButtonEnabled ? () => loadData : loadData,
+                onPressed: loadData,
                 child: Text('Start Audit'),
               ),
               SizedBox(height: 12),
